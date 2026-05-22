@@ -1,4 +1,4 @@
-name: "cloudmin.dev: virtualmin/cloudmin-core-meta"
+name: Build
 
 on:
   push:
