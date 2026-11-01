@@ -1,7 +1,10 @@
-## cloudmin-core-meta
+# cloudmin-core-meta
 
-A dummy package designed to pull in all core dependencies. It installs
-everything needed to set up the Cloudmin core system.
+DEB meta packages for Cloudmin 10 on Debian 13 and Ubuntu 26.04. They install
+core Perl dependencies, Webmin, Cloudmin-Config and Etckeeper. Hypervisor packages come from the OS;
+Ubuntu universe supplies the Perl virtualization bindings. BIND and Postfix are
+optional and are not dependencies of the default stack.
 
-The builds are automatically deployed to the Cloudmin development repositories
-on every commit or tagged release.
+Cloudmin-Config prefers modular libvirt where installed and uses stock libvirtd
+otherwise. Both layouts use the same Cloudmin API. Publish these packages with
+Cloudmin-Config 10.0.0+, the Cloudmin module and current Webmin systemd APIs.
